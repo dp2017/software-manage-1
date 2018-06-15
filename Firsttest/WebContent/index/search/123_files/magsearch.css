@@ -1,0 +1,346 @@
+@charset "utf-8";
+/* CSS Document */
+/*格式化样式*/
+*{margin:0;padding:0}
+body{font:12px/1.5 MIcrosoft YaHei,Arial, Helvetica, sans-serif;color:#333}
+table{width:100%; border-collapse:collapse;border:none;border-spacing:0}
+a{color:#202020;text-decoration:none;}
+img{border:none}
+input{vertical-align:middle;outline:none}
+textarea{outline:none;}
+ul,ol,dl{list-style:none;}
+b,em,i,u,strong{font-weight:normal;font-style:normal;text-decoration:none;}
+h1,h2,h3,h4,h5,h6{font-size:14px;font-weight:normal;}
+
+/*公共样式*/
+.fl{float:left;}
+.fr{float:right;}
+.clearfix{overflow:hidden;zoom:1}
+.clear{clear:both}
+
+
+.wrap1000{width:1000px;margin:0 auto;padding-top:20px;}
+.rightSide{width:240px;}
+.newspaper{border:solid 1px #e5e5e5;background:#f5f5f5;padding:28px;}
+.paperImg{width:158px;height:219px;margin:0 auto;display:block;border:solid 1px #c9c9c9}
+.paperName{text-align:center;text-align:center;padding:10px 0}
+.paperName a{color:#2373fb;}
+.pdf{display:block;width:182px;height:32px;background:url(/images/chaoxing/journal/pdf1.jpg) no-repeat;margin:0 auto;margin-top:15px;}
+.yinyong{display:block;width:182px;height:32px;background:url(/images/chaoxing/journal/yy.jpg) no-repeat;margin:0 auto;margin-top:15px;}
+.rightTitle{height:29px;line-height:29px;background:#eee;padding:0 15px;font-size:16px;}
+.mulu ul{padding:0 5px;}
+.mulu ul li{height:36px;line-height:36px;border-bottom:dashed 1px #eaeaea;padding:0 7px}
+.mulu ul li a{display:block}
+.mulu ul li i{display:inline-block;width:6px;height:6px;background:#000;border-radius:100%;margin-right:15px;}
+.mulu ul li:hover i{background:red}
+.mulu ul li:hover a{color:red}
+.marTop40{margin-top:40px}
+.chuanbo ul li{height:34px;line-height:34px;border-bottom:dashed 1px #eaeaea}
+.chuanbo ul{padding:0 5px;}
+.dz{display:inline-block;width:15px;height:15px;background:url(/images/chaoxing/journal/dz.png) no-repeat;margin-right:20px}
+.read{display:inline-block;filter:alpha(opacity=80);opacity:0.8;width:64px;}
+.number{color:#e74652;filter:alpha(opacity=80);opacity:0.8}
+.yin{display:inline-block;width:16px;height:16px;background:url(/images/chaoxing/journal/yin.png) no-repeat;margin-right:19px}
+.pl{display:inline-block;width:20px;height:20px;background:url(/images/chaoxing/journal/pl.png) no-repeat;margin-right:15px}
+.yd{display:inline-block;width:20px;height:20px;background:url(/images/chaoxing/journal/yd.png) no-repeat;margin-right:19px;float:left;margin-top:10px}
+.sm{text-align:center;padding:25px 0}
+
+.leftTitle{font-size:30px;font-weight:bold;filter:alpha(opacity=80);opacity:0.8;line-height:2}
+.smallTitle{font-size:18px;line-height:2;filter:alpha(opacity=80);opacity:0.8}
+.smallTitle a{color:#1672fc;}
+.xqTitle{line-height:2;filter:alpha(opacity=80);opacity:0.8;margin:10px 0}
+.xqTitle td{padding:3px 0}
+.xqTitle td a{color:#1672fc}
+
+.fullText h3{height:36px;border-bottom:solid 1px #c9c9c9}
+.fullText h3 span{height:33px;line-height:33px;border-bottom:solid 4px #e70c1e;display:inline-block;font-size:16px;padding:0 5px;}
+.sq{color:#1672fc;background:url(/images/chaoxing/journal/sq.png) no-repeat right center;padding-right:10px;margin-top:10px;}
+.textCon{padding:20px 0;line-height:2;font-size:15px;filter:alpha(opacity=80);opacity:0.8}
+.textCon p{text-indent:2em}
+
+.cailiao h3{height:32px;line-height:32px;background:#f1f1f2;font-size:16px;color:#e70c1e;filter:alpha(opacity=80);opacity:0.8;font-weight:bold;padding:0 15px}
+.fb{font-weight:bold}
+
+.MenuboxTwo{height:38px;border-bottom:solid 2px #e60f20;margin-top:50px}
+.MenuboxTwo ul li{float:left;height:36px;border:solid 1px #e5e5e5;background:#f5f5f5;font-size:16px;line-height:36px;text-align:center;padding:0 15px}
+.MenuboxTwo ul li.cur{position:relative;border-top:solid 4px #e60012;background:#fff;border-bottom:none;}
+.ContentboxTwo{padding:30px 0}
+
+.ckWx{padding:10px 0}
+.ckWx h3{font-size:16px;height:45px;line-height:45px}
+.ckWx ul{margin-top:10px}
+.ckWx ul li{padding:15px 35px}
+.ckWx ul li.liBg{background:#f5f5f5;border:solid 1px #eee}
+.ckWx ul li a{color:#1672fc}
+
+.smTab tr td{border:solid 1px #ccc;padding:5px 5px}
+.smTab tr:hover{background:#F2F2F2}
+
+.maskLayer{width:100%;height:100%;filter:alpha(opacity=70);opacity:0.5;background:#000;position:absolute;z-index:996;top:0;left:0;display:none;}
+.popcopy{ width:385px; background:#FFF; border-radius:5px; position:absolute; z-index:999; display:none;}
+.popcopy h2{ text-align:center; font-size:13px; text-align:center; padding:26px 0 10px 0; line-height:28px;}
+.popcopy ul{ margin:0 22px; border-top:solid #d1d1d1 1px; padding:0 0 15px 0; min-height:252px;}
+.popcopy li{ font-size:12px; line-height:20px; padding:10px 0;}
+.popcopy li h3{ font-size:16px; height:24px; line-height:24px;}
+.popcopy li h3 b{ background:#e60000; width:4px; height:18px; float:left; margin:3px 8px 0 0;}
+a.dele{ background:url(/images/guide/index/No.png) no-repeat; width:12px; height:12px; float:right; margin: 10px 10px 0 0;}
+
+#reletedAuthorConId td{cursor: pointer;}
+.alertBg{position:fixed;width:100%;height:100%;top:0;left:0;background:#000;filter:alpha(opacity=30);opacity:0.3;display:none}
+.alert{width:30%;padding:10px;background:#fff;position:fixed;top:40%;left:30%;box-shadow:0 3px 5px #333;display:none}
+.alert h3{font-weight:bold;height:35px;line-height:35px;}
+.closed{font-size:14px;color:#888;font-weight:400;}
+.alertCon{padding:0 10px}
+.alertCon p{padding:10px 5px}
+.alertCon p a{color:#3366cc}
+.alertCon ul li{padding:5px;border-bottom:solid 1px #ccc}
+.divBorder{margin-top:20px;width: 660px;}
+.divBorder h3{height:30px;line-height:30px;background:#f5f5f5;color:#202020;font-size:14px;font-weight:bold;padding:0 15px}
+.reletedred{color:#e70c1e;font-weight:900;}
+/*2017-05-03*/
+/*************列表式右侧***********************/
+.redColor{color:#e60012}
+.grayColor{color:#bbb}
+
+
+.listTop{height:46px;line-height:46px;font-size:14px;color:#aeaeae}
+.topPage{font-size:12px}
+.topPage a{margin:0 5px;color:#bab9b9}
+.topPage a.cur{color:#e60012}
+.listCon{border:solid 1px #e0e0e0}
+.topTab{width:96px;height:26px;background:url(/images/chaoxing/journal2/tab01.png) repeat-x;border:solid 1px #d6d6d6;margin-top:10px;margin-right:5px;line-height:26px}
+.topTab a{font-size:12px;line-height:26px;width:47px;float:left;text-align:center;color:#757575}
+.topTab a i{background:url(/images/chaoxing/journal2/tabI.png) no-repeat;display:inline-block;margin-right:2px}
+.topTab a i.icon01{width:12px;height:10px;background-position:left top}
+.topTab a i.icon02{width:11px;height:13px;background-position:right top}
+.topTab a.cur{background:url(/images/chaoxing/journal2/tb.png) repeat-x;color:#e60012}
+.topTab a.cur .icon01{background-position:left -21px}
+.topTab a.cur .icon02{background-position:right -21px}
+.tabTop{height:39px;line-height:39px;background:#eef6ff;border-bottom:solid 1px #cae4ff;padding-left:10px;font-size:14px}
+.load{display:inline-block;margin-left:25px;border:solid 1px #d6d6d6;background:#fff;height:24px;line-height:24px;font-size:12px}
+.load a{color:#838383;padding:0 10px;display:inline-block}
+.load a.cur{color:#e60012}
+.px{width:50%;background:#f6f6f6;height:39px;line-height:39px;border-left:solid 1px #e0e0e0}
+.samllPage{text-align:center;line-height:39px;font-size:12px;color:#B8B8B8;margin-left: 10px;}
+.samllPage i{display:inline-block;background:url(/images/chaoxing/journal2/smalPage.png) no-repeat;width:15px;height:15px;vertical-align:middle;margin:0 2px;cursor:pointer}
+.samllPage i.next{background-position:right top}
+.samllPage i.red{background-position:left bottom}
+.samllPage i.next.red{background-position:right bottom}
+.pxLeft{color:#868686}
+.pxTab a{font-size:12px;float:left;padding:0 5px;height:24px;line-height:24px;border:solid 1px #d6d6d6;margin-left:-1px;background:#fff;margin-top:8px}
+
+.listTable tr th{height:41px;background:#deeefe;border-top:solid 1px #fff;border-bottom:#cae4ff;font-size:16px;color:#4263a8;font-weight:400;padding:0 10px}
+.listTable td{padding:10px}
+.down{display:inline-block;width:16px;height:16px;background:url(/images/chaoxing/journal2/down.png) no-repeat;margin-right: 15px;}
+.listTable tr.trBg td{background:#f7f7f7}
+.fenleilist a{color: #0099ff;}
+
+
+/******************摘要右侧******************************/
+.blueColor{color:#0099ff}
+.listOne{border-bottom:dashed 1px #d9d9d9;padding:10px}
+.xh{width:30px;padding-top:3px}
+.listOne dl{float:left;width:95%}
+.listOne dl dt{font-size:16px;margin-bottom:5px}
+.listOne dl dt a{color:#0099ff}
+.font14{font-size:14px}
+.listOne dl dd{margin-bottom:5px}
+.detal{text-indent:2em;color:#4c4c4c}
+.marginLfet{margin-left:20px}
+
+
+
+
+/******************单篇文章2017-05-05******************************/
+
+.Fwid1180{width:1180px;margin:0 auto;position:relative}
+.F_mainright{width:920px;}
+.Sleft{width:239px;padding-bottom:200px;position:relative;border-left:solid 1px #d9d9d9}
+.Sleft a{color:#0099ff}
+.leftSwitch{position:absolute;width:16px;height:56px;background:url(/images/chaoxing/journal2/switch.png) no-repeat;right:240px;top:200px;cursor:pointer}
+.sTopImg{background:#f5f5f5;padding:28px 39px;border:solid 1px #d9d9d9;border-left:0}
+.sTopImg p{text-align:center;line-height:2}
+.paperImg{position:relative;margin-bottom:10px}
+.paperImg b{position:absolute;width:54px;height:34px;background:url(/images/chaoxing/journal2/hx.png) no-repeat;right:-10px;top:5px;text-align:center;font-size:16px;color:#fff}
+.bord{border-right:solid 1px #d9d9d9;padding-right:17px}
+.switch02{background:url(/images/chaoxing/journal2/switch02.png) no-repeat}
+.email{border:solid 1px #d9d9d9;border-top:0;text-align:center;padding:5px 0;border-left:0}
+.email li{height:24px;line-height:24px}
+.email li.tg{background:url(/images/chaoxing/journal2/tg.png) no-repeat 60px center}
+.email li.yx{background:url(/images/chaoxing/journal2/email.png) no-repeat 60px center}
+.leftBot{border:solid 1px #ccc;margin-top:40px;border-left:0;}
+.bd{border-bottom:dashed 1px #d9d9d9;margin:0 10px}
+.leftBot ul{padding:5px 0}
+.leftBot ul li{padding:0 30px;height:25px;line-height:25px}
+.leftBot ul li a{color:#333}
+.code{border:solid 1px #ccc;border-top:0;border-left:0;text-align:center;padding:30px 0}
+.codeFont{font-size:16px;margin-top:12px}
+
+.F_titel{font-size:36px;color:#333;line-height:70px;}
+.F_name{display:block;width:100%;line-height:36px;color:#333;font-size:18px;}
+.F_name a{color:#0099ff;padding:0 3px;}
+.Ftitcon{width:100%;height:30px;border-bottom:1px solid #d9d9d9;text-align:right;padding-top:10px;}
+.Ftitcon a{display:inline-block;float:right;padding:0 5px;height:30px;}
+.Ftitcon a i{display:inline-block;background:url(/images/chaoxing/journal2/ficon.png) no-repeat;float:left;}
+.Ftitcon a.Fyygs i{width:14px;height:14px;margin:2px 4px 0 0;background-position:left top;}
+.Ftitcon a.Fgz i{width:14px;height:12px;margin:2px 4px 0 0;background-position:-28px top}
+.Ftitcon a.Fzf{position:relative}
+.Ftitcon a.Fzf i{width:14px;height:14px;margin:2px 4px 0 0;background-position:-61px top;}
+.Ftitcon a.Fzf i.ixl{width:9px;height:4px;margin:8px 0 0 5px;background-position:-161px top;float:right}
+
+.Ftitcon a.Fsc i{width:14px;height:14px;margin:2px 4px 0 0;background-position:-95px top}
+.Ftitcon a.Fdy i{width:14px;height:14px;margin:2px 4px 0 0;background-position:-130px top}
+.Fzful{width:83px;padding:5px 0 5px 10px;border:1px solid #eee;background:#fff;position:absolute;left:0;top:20px;display:none}
+.Fzful li{text-align:left;height:24px;line-height:24px;color:#000;}
+.Fzful li b{width:18px;height:18px;display:inline-block;background:url(/images/chaoxing/journal2/ficon.png) no-repeat;float:left;margin-top:3px;margin-right:5px;}
+.Fzful li b.sf{background-position:left -28px;}
+.Fzful li b.bj{background-position:left -60px;}
+.Fzful li b.xz{background-position:left -91px;}
+.Fzful li b.xx{background-position:left -124px;}
+.Fzful li b.qq{background-position:left -154px;}
+.Fzful li b.wx{background-position:left -185px;}
+.Fzful li b.yx{background-position:left -217px;}
+.Fzful li b.txl{background-position:left -251px;}
+.Fzful li b.sina{background-position:left -284px;}
+.Fzful li b.tx{background-position:left -318px;}
+.Fzful li b.db{background-position:left -349px;}
+.Fzful li b.wy{background-position:left -382px;}
+
+.Fmian1{width:100%;padding:10px 0;}
+.Fmian1 td{padding:2px 0;line-height:24px;}
+.Fmian1 td a{color:#0099ff}
+.Fmian1 td i{float:left;margin-top:5px;margin-right:5px;}
+.FqwTit{width:100%;height:36px;border-bottom:solid 1px #c9c9c9;margin-bottom:20px;}
+.FqwTit span{height: 33px;line-height: 33px;border-bottom: solid 4px #e70c1e;display: inline-block;font-size: 18px;padding: 0 5px;float:left}
+.FqwTit a.sq{color: #1672fc;background: url(/images/chaoxing/journal2/sq.png) no-repeat right center;    padding-right: 10px;    margin-top: 10px;}
+.FtextCon{padding:0 10px;color:#333 }
+.FtextCon span.Fyy{font-size:24px;line-height:40px;}
+.FtextCon span.Fyy i{padding:0 10px;}
+.FtextCon p{padding:10px 0;line-height:24px;}
+.Ftitpic{display:block;margin:20px 0;}
+.FqwTit p{font-size:12px;float:left;padding-top:15px;}
+.F_tb1{margin:0 auto;text-align:center;}
+.Fwxtit{height:30px;}
+.Fwxtit a{display:inline-block;padding:0 5px;float:left;line-height:24px;margin-right:10px;}
+.Fwxtit a i{display:inline-block;width:16px;height:16px;background:url(/images/chaoxing/journal2/ficon.png) no-repeat right top;margin:4px 5px 0 0;float:left}
+.Fwxtit a.icur{color:#fff;background:#0099ff;border-radius:3px;}
+.Fwxtit a.icur i{background-position:right -24px;}
+.pad15{padding-left:15px;}
+.Fwxul {padding-bottom:20px;}
+.Fwxul li{width:100%;height:26px;line-height:26px;color:#000}
+.Fwxul li a{color:#0099ff}
+.Fglzz{padding-bottom:20px;}
+.Fglzz span{display:block;color:#e70c1e;font-size:16px;line-height:30px;}
+.Fglzz p{padding-bottom:10px;}
+.Fglzz p a{color:#0099ff;display:inline-block;padding:0 5px;}
+.Fglzz .ts{color:#0099ff;}
+.Fwxp{line-height:26px;}
+.Fwxp a{color:#e70c1e}
+.More{color:#0099ff}
+.Fqggz{height:auto!important;overflow:hidden;padding-bottom:20px;}
+.Fqggz li{width:160px;height:26px;line-height:26px;float:left;margin-right:100px;white-space:nowrap;text-overflow:ellipsis;-o-text-overflow:ellipsis; overflow: hidden;}
+
+/*********************分类浏览201705-05**********************************/
+
+.marTop18{margin-top:18px}
+.caLeft{width:200px;float: left;}
+.caLeft h3{height:43px;line-height:43px;background:url(/images/chaoxing/journal2/fl.png) no-repeat 13px center #e60012;padding-left:45px;font-size:20px;color:#fff}
+.caLeft ul{border-left:solid 1px #e0e0e0;border-right:solid 1px #e0e0e0}
+.caLeft ul li{height:39px;border-bottom:solid 1px #e0e0e0;line-height:39px;font-size:14px;padding:0 10px 0 40px}
+.caLeft ul li a{color:#8f8f8f;display:block;width: 148px; overflow: hidden; text-overflow: ellipsis; display: block; white-space: nowrap;}
+.caLeft ul li a:hover,.caLeft ul li.cur a{color:#e60012}
+.caRight{width:965px;}
+.caOne{border:solid 1px #e0e0e0;border-top:solid 2px #cecece;margin-bottom:20px}
+.caOne h3{height:40px;line-height:40px;border-bottom:solid 1px #d6dbe1;padding:0 17px;font-size:16px;color:#e60012}
+.blueColor02{color:#458fce}
+.caOne table td{padding:10px;font-size:14px;border-bottom:solid 1px #eeeff0}
+.caOne table td.tdLeft{font-weight:bold}
+.caOne table td.tdRIght a{margin-right:40px;display:inline-block}
+.caOne table tr.last td{border:0}
+
+
+/*********************导出参考文献弹层***************************/
+.popup{width:700px;height:450px;background:#fff;position:fixed;top:30%;left:30%;z-index:999}
+.popupTitle{height:48px;line-height:48px;background:#474747;color:#fff;font-size:16px;padding:0 20px}
+.gb{width:14px;height:14px;background:url(/images/chaoxing/journal2/gb.png) no-repeat;margin-top:17px;cursor:pointer}
+.popCen{height:48px;line-height:48px;background:#efefef;border-bottom:solid 1px #e0e0e0;padding:0 20px;}
+.popCen .selectBox{ vertical-align:top; position:relative;cursor:pointer; background-color:#fff; width:119px; border:1px solid #cfcfcf; line-height:29px; height:29px;margin-top:11px}
+.popCen .selectBox p{  vertical-align:top; padding:0 15px 0 10px; background:url(/images/chaoxing/journal2/selArr.gif) no-repeat right 13px; margin-right:10px;}
+.popCen .selectBox ul{ width:119px; border:1px solid #cfcfcf; border-top:0; position:absolute; z-index:1; top:28px; left:-1px; background-color:#fff; display:none;}
+.popCen .selectBox ul li a{ display:block; line-height:29px; padding:0 10px; color:#333; border-top:1px solid #f2f2f2;margin:0}
+.popCen .selectBox ul li a:hover{ background-color:#3388ff; color:#fff;}
+.popCen a{color:#4263a8;margin-left:15px}
+.popCen a:hover{color:#e60012}
+.popCen a i{display:inline-block;height:15px;background:url(/images/chaoxing/journal2/popIco.png) no-repeat;margin-right:6px;vertical-align:middle}
+.popCen a.pop01 i{background-position:right top;width:15px;}
+.popCen a.pop02 i{background-position:-228px top;width:12px}
+.popCen a.pop03 i{background-position:-170px top;width:13px}
+.popCen a.pop04 i{background-position:left top;width:13px}
+.popCon{padding:0 20px;height: 280px;overflow: auto;}
+.wenxian{border-bottom:dashed 1px #e5e5e5;padding:12px 0}
+.delete{width:40px;height:56px;background:url(/images/chaoxing/journal2/dele.png) no-repeat bottom left}
+.delete:hover{background-position:left top}
+.wxFont{width:555px;font-family:'宋体'}
+.wxFont h3{font-weight:bold;padding-bottom:5px}
+.wxFont p{color:#666;line-height:1.6}
+
+.wrap1024{max-width:1280px;min-width:1086px;margin:0 auto;position:relative}
+.searInp{width:320px;height:46px;border:solid 1px #c7c7c7;border-right:none;background:#fff;border-radius:5px 0 0 5px;padding:0 10px}
+.searSub{width:98px;height:48px;line-height:48px;background:#e60000;border:none;font-size:16px;color:#fff;border-radius:0 5px 5px 0;font-family:Microsoft YaHei;cursor:pointer}
+.highSBtn{color:#2466f3;font-size:14px;line-height:48px;margin-left:10px}
+.searBot{font-size:14px;padding-top:10px}
+.searBot label{display:inline-block;margin-right:14px}
+.rightSide{padding:0 10px;width: 270px;}
+.title{width:228px;height:30px;line-height:30px;border:solid 1px #e0e0e0;background:#f3f3f3;padding:0 20px;font-size:16px;color:#666}
+.pad22{padding-top:22px;}
+.xgList{padding:10px 0}
+.xgList li{float:left;width:100%;height:30px;line-height:30px;}
+.xgList li a{color:#2466f3}
+.xgList li.empty a{color:#e60000}
+.leftSide{padding:0 10px}
+.divOne h3{height:35px;line-height:35px;font-size:16px;color:#666}
+.divOne h3 b{float:left;width:15px;height:15px;margin-right:6px;margin-top:10px}
+.divOne h3 b.jia{background:url(/images/guide/search/jia.jpg) no-repeat}
+.divOne h3 b.jian{background:url(/images/guide/search/jian.jpg) no-repeat}
+.divOne ul{padding:10px;padding-left:10px;}
+.divOne ul li{height:26px;line-height:26px}
+.divOne ul li i{float:left;width:7px;height:7px;border:solid 1px #7d7d7d;margin-right:7px;margin-top:8px}
+.divOne ul li i.red{background:red;border:solid 1px red}
+.divOne ul li span{color:#999}
+.divOne ul li.moreList a{color:#2466f3}
+.crumb span{padding-left:40px;}
+.crumb span b{color:#e60000;font-weight:bold}
+.sorting{ height:40px; line-height:40px; border:solid #e8e8e8 1px; background:#f3f3f3; margin:10px 0 0 0;}
+.sorting a{ display:block; font-size:13px; float:left; height:40px;width: 16%;text-align: center;}
+.sorting a.cur{border-left:solid #e8e8e8 1px;border-right:solid #e8e8e8 1px; background:#FFF; color:#e60000; font-weight:bold;}
+.midCon{padding-right:15px}
+.border{border:solid 1px #e8e8e8;padding:20px;margin:15px 0}
+.hisRIght{width:640px;margin-left:20px}
+.hisRIght h3{font-size:18px;font-weight:bold}
+.hisRIght h3 a{font-size:12px;font-weight:400}
+.blue,a.blue{color:#2466f3}
+.hisBottom{padding-top:10px;}
+.hisBottom span{float:left;padding-left:1%;color:#666;width:24%}
+
+.resultList dl{ zoom:1; overflow:hidden; padding:10px 0; border-bottom:solid #f3f3f5 1px;margin:0 5px}
+.resultList dl dt{ line-height:32px; font-size:16px; }
+.resultList dl dt em{ color:#e60000; font-style:normal;}
+.resultList dl dt input{ margin:0 6px 3px 0;}
+.resultList dl dt img{ vertical-align:middle; margin:0 0 0 6px;}
+.resultList dl dt span{ color:#2466f3; margin:0 0 0 12px;}
+.resultList dl dd{ font-size:12px; line-height:24px; color:#666;}
+.loadOnLine{display:inline-block;background:url(/images/guide/search/load.jpg) no-repeat center left;padding-left:20px;color:#666;margin-right:20px}
+.yinyong{display:inline-block;background:url(/images/guide/search/yinyong.jpg) no-repeat center left;padding-left:20px;color:#666;margin-right:20px;margin-left: 20px;}
+a.export{ display:block; width:96px; height:32px; color:#FFF; background:#e60000; text-align:center; line-height:32px; border-radius:4px; float:left;margin-top: 65px;}
+/*分页*/
+.pagination{text-align:center; margin-top:70px;}
+.pagination a,.pagination b{display:inline-block; vertical-align:top; border:solid #d0d0d0 1px; height:20px; line-height:20px; margin:0 6px; padding:0px 6px;}
+.pagination a:hover,.pagination .cur{ background-color:#e60000; color:#FFF; border:solid #e60000 1px;}
+.leftSide .yincang {cursor: pointer;display: inline-block;float: left;max-width: 80px;overflow: hidden;text-overflow: ellipsis;vertical-align: top;white-space: nowrap;}
+.goTop2 {width: 22px;height: 85px;text-indent: -9999px;background: url(/images/discover/return.gif) no-repeat;position: absolute;top: 400px;cursor: pointer;left: -10px;}
+#goTop3 {background: rgba(0, 0, 0, 0) url("/images/discover/tishi.gif") no-repeat scroll 0 0;display: none;height: 42px;margin-left: -95px;position: absolute;top: 410px;width: 93px;}
+.inputcheckbox{margin-top: 7px;margin-right: 4px;}
+
+.X_language{display:block;line-height:24px;}
+.X_language a{display:inline-block;font-size:12px;color:#333;padding:0 10px;}
+.X_language a.X_cur{color:#2466f3;}

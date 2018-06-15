@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC "-//Apache Software Foundation//DTD Struts Configuration 2.1//EN" "http://struts.apache.org/dtds/struts-2.1.dtd">
+<struts>
+
+  <package name="login" namespace="/WebUI" extends="struts-default">
+    <action name="login" class="com.stdcMis.Action.common.LoginAction">	
+      	<result name="success">main.html</result>
+      	<result name="error">login.html</result>
+    </action>
+  </package>
+  
+  <package name="OrgInstitution" namespace="/OrgInstitution" extends="struts-default">
+    <action name="register" class="com.stdcMis.Action.orgInstitution.RegisterAction">	
+      	<result name="success">../WebUI/login.html</result>	
+     	 <result name="error">GetInformation.jsp</result>
+    </action>
+    <action name="setSubandNae" class="com.stdcMis.Action.orgInstitution.SetSubandNaeAction">	
+     	 <result name="success">CreateDemand.jsp</result>
+    </action>
+    <action name="createDemand" class="com.stdcMis.Action.orgInstitution.AddandSaveDemandAction">	
+      	<result name="success">../WebUI/index.html</result>	
+      	<result name="error">CreateDemand.jsp</result>
+    </action>
+    <action name="demandManage" class="com.stdcMis.Action.common.ShowDemandList">
+      	<result name="success">DemandManage.jsp</result>
+    </action>
+    <action name="updateManage" class="com.stdcMis.Action.common.ShowDemandList">
+    	<result name="success">showUpdateList.jsp</result>
+    </action>
+    <action name="demandShow" class="com.stdcMis.Action.common.ShowUpdateDemand">
+    	<result name="success">showUpdateDemand.jsp</result>
+    </action>
+    <action name="updateDemand" class="com.stdcMis.Action.orgInstitution.DemandUpdate"> 
+    	<result name="success">../WebUI/index.html</result>
+    	<result name="error">showUpdateDemand.jsp</result>
+    </action>
+  </package>
+  
+  <package name="FormAudit" namespace="/FormAudit" extends="struts-default">
+  	<action name="formAuditManage" class="com.stdcMis.Action.common.ShowDemandList">
+  		<result name="success">showSubmitDemand.jsp</result>
+  	</action>
+  	<action name="demandShow" class="com.stdcMis.Action.common.ShowDemandDetail">
+  		<result name="success">formAudit.jsp</result>
+  	</action>
+  	<action name="saveAudit" class="com.stdcMis.Action.audit.SaveAudit">
+  		<result name="success">../WebUI/index.html</result>
+  	</action>
+  </package>
+  
+  <package name="DepartAudit" namespace="/DepartAudit" extends="struts-default">
+  	<action name="departAuditManage" class="com.stdcMis.Action.common.ShowDemandList">
+  		<result name="success">showFormedDemand.jsp</result>
+  	</action>
+  	<action name="demandShow" class="com.stdcMis.Action.common.ShowDemandDetail">
+  		<result name="success">departAudit.jsp</result>
+  	</action>
+  	<action name="saveAudit" class="com.stdcMis.Action.audit.SaveAudit">
+  		<result name="success">../WebUI/index.html</result>
+  	</action>
+  </package>
+  
+  <package name="StatisticsAndInquire" namespace="/StatisticsAndInquire" extends="struts-default">
+  	<action name="searchDemand" class="com.stdcMis.Action.statisticsAndInquire.SearchDemand">
+  		<result name="success">SearchResult.jsp</result>
+  	</action>
+  	<action name="Comprehensiveindex" class="com.stdcMis.Action.statisticsAndInquire.Comprehensiveindex">
+  		<result name="success">SearchResult.jsp</result>
+  	</action>
+  	<action name="showDemand" class="com.stdcMis.Action.common.ShowDemandDetail">
+  		<result name="success">ShowDemand.jsp</result>
+  	</action>
+  	<action name="searchData" class="com.stdcMis.Action.statisticsAndInquire.Statistics">
+  		<result name="success">Statistics.jsp</result>
+  	</action>
+  </package>
+  
+  <package name="SystemManage" namespace="/SystemManage" extends="struts-default">
+  	<action name="roleManage" class="com.stdcMis.Action.system.ShowRoleList">
+  		<result name="success">RoleBroswer.jsp</result>
+  	</action>
+  	<action name="addRole" class="com.stdcMis.Action.system.AddRole">
+  		<result type="chain">roleManage</result>
+  		<result name="error">SetNewRole.jsp</result>
+  	</action>
+  	<action name="deleteRoles" class="com.stdcMis.Action.system.DeleteRoles">
+  		<result type="chain">roleManage</result>
+  	</action>
+  	<action name="getPermission" class="com.stdcMis.Action.system.ShowRoleDetail" method="getPermission">
+  		<interceptor-ref name="defaultStack" />
+  	</action>
+  </package>
+</struts>    
